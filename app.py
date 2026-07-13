@@ -101,9 +101,9 @@ d = c - b_total
 st.write(" ")
 st.markdown(f"**② 1年間の不足額 [D]：**")
 if d > 0:
-    st.markdown(f"[C] {c:.1f}万円 － [B] {b_total:.1f}万円 ＝ <span style='color:red; font-size:20px; font-weight:bold;'>{d:.1f} 万円（不足）</span>", unsafe_unsafe_with_html=True)
+    st.markdown(f"[C] {c:.1f}万円 － [B] {b_total:.1f}万円 ＝ <span style='color:red; font-size:20px; font-weight:bold;'>{d:.1f} 万円（不足）</span>", unsafe_allow_html=True)
 else:
-    st.markdown(f"[C] {c:.1f}万円 － [B] {b_total:.1f}万円 ＝ <span style='color:green; font-size:20px; font-weight:bold;'>{abs(d):.1f} 万円（黒字・準備完了）</span>", unsafe_unsafe_with_html=True)
+    st.markdown(f"[C] {c:.1f}万円 － [B] {b_total:.1f}万円 ＝ <span style='color:green; font-size:20px; font-weight:bold;'>{abs(d):.1f} 万円（黒字・準備完了）</span>", unsafe_allow_html=True)
 
 st.write(" ")
 years = st.number_input(
